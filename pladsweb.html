@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plads - Platypus Laughs And Does Stuff</title>
+  <style>
+    /* CSS Reset */
+    body {
+      background-image: url('file:///C:/Users/rangg/Downloads/DALL%C2%B7E%202024-11-23%2009.24.39%20-%20A%202D%20animated%20platypus%20wearing%20sunglasses,%20set%20in%20a%20river%20scene%20surrounded%20by%20lush%20trees.%20The%20background%20has%20a%20cartoonish%20style%20similar%20to%20The%20Simpson.webp');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      text-align: center;
+    }
+
+    body {
+      text-align: center;
+      color: #333;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 20px;
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .subtitle {
+      font-size: 1.8rem;
+      animation: glow 3s infinite alternate;
+      color: #ffde59;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ffde59, 0 0 20px #ffde59, 0 0 30px #ffde59;
+      }
+      to {
+        text-shadow: 0 0 20px #ffe17d, 0 0 30px #ffe17d, 0 0 40px #ffe17d;
+      }
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    .card {
+      display: inline-block;
+      background: rgb(192, 231, 255);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease, background 0.5s ease;
+    }
+
+    .card:hover {
+      transform: rotate(5deg) scale(1.1);
+      background: #ff7f59;
+    }
+
+    .card img {
+      width: 120px;
+      border-radius: 50%;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #666;
+    }
+
+    .wallet {
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .wallet p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .wallet-address {
+      font-size: 1.1rem;
+      padding: 10px;
+      background: #ff7f50;
+      border-radius: 5px;
+      word-wrap: break-word;
+      margin-bottom: 10px;
+    }
+
+    .copy-btn {
+      padding: 10px 20px;
+      background: #ff7f50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .copy-btn:hover {
+      background: #ff5722;
+    }
+
+    .supply {
+      margin: 30px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .supply p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .total-supply {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ff5722;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .buy-btn {
+      padding: 15px 30px;
+      background: #ff5722;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .buy-btn:hover {
+      background: #ff7f50;
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #555;
+      animation: fadeIn 3s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0.5;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Plads</h1>
+  <p class="subtitle">Platypus Laughs And Does Stuff</p>
+
+  <div class="container">
+    <div class="card">
+      <img src="file:///C:/Users/rangg/OneDrive/Desktop/plads%20project/platty.jpg" alt="Platypus Meme">
+      <p>Join the Fun, Laugh with the Platypus!</p>
+    </div>
+    <div class="card">
+      <img src="file:///C:/Users/rangg/OneDrive/Desktop/plads%20project/plattyR.jpg" alt="Platypus Meme">
+      <p>Hold $PLADS and Share the Joy!</p>
+    </div>
+  </div>
+
+  <div class="wallet">
+    <p>Your Wallet Address:</p>
+    <div class="wallet-address" id="walletAddress">0x1234567890abcdef1234567890abcdef12345678</div>
+    <button class="copy-btn" onclick="copyToClipboard()">Copy Address</button>
+  </div>
+
+  <div class="supply">
+    <p>Total Supply of $PLADS:</p>
+    <div class="total-supply" id="totalSupply">1,000,000,000 PLADS</div>
+  </div>
+
+  <!-- Buy Button Section -->
+  <a href="https://pump.fun/your-pump-fun-link" target="_blank">
+    <button class="buy-btn">Buy on pump.fun</button>
+  </a>
+
+  <footer>
+    © 2024 Plads | Made with ❤️ for Platypus Lovers
+  </footer>
+
+  <script>
+    function copyToClipboard() {
+      const address = document.getElementById('walletAddress').innerText;
+      navigator.clipboard.writeText(address).then(() => {
+        alert('Wallet address copied to clipboard!');
+      }).catch(err => {
+        alert('Failed to copy wallet address.');
+      });
+    }
+  </script>
+</body>
+</html>
